@@ -1,0 +1,15 @@
+TODO:
+
+write tests for EO_processing that can be called in command line
+add extra functions to additions.py (do not need to call)
+main.ipynb file
+separate into other ipynb files
+create environment file
+create makefile
+write readme
+figure out licensing
+pdf_builds
+myst site with github pages
+orcid additions
+binder
+ai_documentation.txt
