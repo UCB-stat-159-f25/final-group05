@@ -1,0 +1,18 @@
+Brycen Manners:
+	Prompt:
+		I have a list of tuples, how do I convert it into two lists of the first item, and the second item
+
+	Response:
+		Suppose you have a list of tuples:
+
+			data = [(1, 'a'), (2, 'b'), (3, 'c')]
+
+
+		You can separate it into two lists like this:
+
+			first_items, second_items = zip(*data)
+			first_items = list(first_items)
+			second_items = list(second_items)
+			
+			print(first_items)   # [1, 2, 3]
+			print(second_items)  # ['a', 'b', 'c']
