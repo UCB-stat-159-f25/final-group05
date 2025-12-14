@@ -16,3 +16,6 @@ Brycen Manners:
 			
 			print(first_items)   # [1, 2, 3]
 			print(second_items)  # ['a', 'b', 'c']
+
+Aniket Kamat:
+	I did not use AI for this project.
