@@ -4,11 +4,15 @@ channels:
   - defaults
 dependencies:
   - python=3.11
-  - ipykernel=7.1.0
-  - pandas=2.3.3
-  - seaborn=0.13.1
+  - ipykernel
+  - pandas
+  - seaborn
   - matplotlib
+  - pytorch
   - pip
   - pip:
-    - spacy==3.8.7
-    - en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+      - transformers
+      - datasets
+      - accelerate>=0.26.0
+      - spacy==3.8.7
+      - en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
