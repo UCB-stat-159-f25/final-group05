@@ -17,10 +17,6 @@ project:
 site:
   template: book-theme
   title: Final project of Stat 159/259 in Fall 2025
-  options:
-    nav_mode: file
   actions:
       - title: Binder launch 
         url: https://mybinder.org/v2/gh/UCB-stat-159-f25/final-group05/HEAD
-exports:
-  - format: html
