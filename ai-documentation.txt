@@ -19,3 +19,11 @@ Brycen Manners:
 
 Aniket Kamat:
 	I did not use AI for this project.
+
+Soohyun Kim:
+    Prompt: 
+        Why is the MySt WEbsite glitching too much.
+
+    Response:
+        Common problem, caused by Browser Caching
+        Fix: Hard refresh, Mac: Cmd + Shift + R
