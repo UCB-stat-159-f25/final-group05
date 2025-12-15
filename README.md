@@ -2,7 +2,10 @@
 
 [MyST Website](https://ucb-stat-159-f25.github.io/final-group05/)
 
-# Final Project: Analysis of Executive Orders
-In this project, we analyze executive orders (EOs) from 1994-2025. The dataset can be on the U.S. Government Open Data Portal as well as in this repository as executive_orders.csv. We perform various types of frequency analyses such as looking at the quantity of EOs over time as well as the frequency of certain types over time. We also identify a data integrity related issue when analyzing the publication delay. Most of the analysis can be found in main.ipynb.
 #NEED TO ADD STEPS TO RECREATE
 To check out the Binder build, go to [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UCB-stat-159-f25/final-group05/HEAD)
+
+# Final Project: Analysis of Executive Orders
+In this project, we analyze executive orders (EOs) from 1994–2025. The dataset is available on the U.S. Government Open Data Portal and is also included in this repository as executive_orders.csv. We perform several frequency-based analyses, including examining the number of EOs issued over time and changes in the prevalence of different EO types. We also identify a data integrity issue related to publication delays when comparing signing and publication dates. In addition, we explore a lightweight natural language processing application by fine-tuning a small pretrained language model on executive order titles. This experiment illustrates how historical EO titles can be used to generate plausible future EO titles and allows us to compare model outputs before and after fine-tuning. Most analyses are presented in dedicated analysis notebooks, with results summarized and discussed in main.ipynb.
+
+
