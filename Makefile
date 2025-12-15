@@ -1,20 +1,25 @@
-.PHONY : env all help
+.PHONY: env all pdfs help
 
-## env       :create a new environment from environment.yml, or update it if it already exists
-env : environment.yml
+## env : create/update the conda environment
+env: environment.yml
 	conda env update --name finalproj --file environment.yml --prune
 
-## all       : runs all notebooks
-all : pdf_builds/main.pdf pdf_builds/word-analysis.pdf pdf_builds/LLM.pdf
+## all : execute all notebooks (reproducibility) using nbconvert
+all:
+	jupyter nbconvert --to notebook --execute main.ipynb --inplace
+	jupyter nbconvert --to notebook --execute word-analysis.ipynb --inplace
+	jupyter nbconvert --to notebook --execute LLM.ipynb --inplace
 
-pdf_builds/main.pdf : main.ipynb
-	jupyter nbconvert --to pdf --execute main.ipynb --output-dir pdf_builds
+## pdfs : render PDFs using MyST into pdf_builds/
+pdfs:
+	mkdir -p pdf_builds
+	myst build main.ipynb --pdf
+	myst build word-analysis.ipynb --pdf
+	myst build LLM.ipynb --pdf
+	# Copy the PDFs from _build to pdf_builds 
+	cp _build/exports/main.pdf pdf_builds/main.pdf || true
+	cp _build/exports/word-analysis.pdf pdf_builds/word-analysis.pdf || true
+	cp _build/exports/llm.pdf pdf_builds/LLM.pdf || true
 
-pdf_builds/word-analysis.pdf : word-analysis.ipynb
-	jupyter nbconvert --to pdf --execute word-analysis.ipynb --output-dir pdf_builds
-
-pdf_builds/LLM.pdf : LLM.ipynb
-	jupyter nbconvert --to pdf --execute LLM.ipynb --output-dir pdf_builds
-
-help : Makefile
-	@sed -n 's/^##//p' $<
+help:
+	@sed -n 's/^##//p' Makefile
