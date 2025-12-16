@@ -17,6 +17,21 @@ Brycen Manners:
 			print(first_items)   # [1, 2, 3]
 			print(second_items)  # ['a', 'b', 'c']
 
+	Prompt:
+		I have a line plot with the year on the x axis, I want to label the greatest value with its year
+
+	Response:
+		plt.annotate(
+		    f"{int(max_year)}",
+		    xy=(max_year, max_value),
+		    xytext=(5, 5),
+		    textcoords="offset points",
+		    ha="left",
+		    va="bottom",
+		    fontsize=10,
+		    fontweight="bold"
+			)
+
 Aniket Kamat:
 	I did not use AI for this project.
 
