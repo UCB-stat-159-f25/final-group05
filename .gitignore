@@ -4,3 +4,5 @@ _build/
 llm_ckpt/
 !pdf_builds/
 !pdf_builds/*.pdf
+EO_processing/__pycache__/
+EO_processing/.ipynb_checkpoints/
