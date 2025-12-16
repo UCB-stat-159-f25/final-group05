@@ -1,5 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/sSkqmNLf)
 
+[![DOI](https://zenodo.org/badge/1110446498.svg)](https://doi.org/10.5281/zenodo.17954551)
+
 [MyST Website](https://ucb-stat-159-f25.github.io/final-group05/)
 
 To check out the Binder build, go to [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UCB-stat-159-f25/final-group05/HEAD)
