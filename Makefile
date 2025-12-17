@@ -2,6 +2,7 @@
 
 ## env : create/update the conda environment
 env: environment.yml
+	conda env list | grep -q finalproj || conda env create -n finalproj -f environment.yml
 	conda env update --name finalproj --file environment.yml --prune
 
 ## all : execute all notebooks (reproducibility) using nbconvert
